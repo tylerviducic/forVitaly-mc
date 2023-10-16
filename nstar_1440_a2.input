@@ -3,9 +3,9 @@
 %
 %            genr8 -M100 -Aoutput.ascii -n < reaction.input
 %
-% Example: gamma p -> p X(1600)          (All decays are isotropic)
-%                      X -> pi+ pi- pi0
-%                                       pi0->2gamma   
+% Example: gamma p -> N*(1440) a2-          (All decays are isotropic)
+%                  N*  -> p pi-
+%                  a2- -> K+ Ks  
 %
 %  hint: use "-n" flag to actually print the particle names in the
 %        the output for viewing/debuging, but remember not to use "-n" 
@@ -35,9 +35,9 @@
 %
 % This file generates event for the following reaction
 %
-% gamma p -> p omega 
-%               |->     gamma pi0
-%                              |-> gamma gamma
+% gamma p -> N* a2- 
+%            |->     p pi-
+%               |-> K- Ks
 %
 %
 % Feb. 13, 2008  David Lawrence
