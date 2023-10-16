@@ -31,14 +31,34 @@ The fie `jana_analysis.config` is a config file for JANA. I wish I had more info
 
 The file is fairly simple. JANA Analysis config file specifies which plugins you want to run, along with the number of threads to be used for that running. 
 
-Line 5 prescribe the ReactionFilter for the reaction $\gamma p \rightarrow \pi^{-}K^{+}K_{s}$. Line 6 prescribes that the $K_{s}$ decays to $\pi^{+}\pi^{-}$. Line 7 states that there are to be 4 beam bunches considered - the flag `B4` - and that the $K_{s}$ is not to be constrained by the kinematic fitter - the flag `M16`. 
+Line 5 prescribe the ReactionFilter for the reaction $\gamma p \rightarrow \pi^{-}K^{+}K_{s}$. 
+
+Line 6 prescribes that the $K_{s}$ decays to $\pi^{+}\pi^{-}$. 
+
+Line 7 states that there are to be 4 beam bunches considered - the flag `B4` - and that the $K_{s}$ is not to be constrained by the kinematic fitter - the flag `M16`. 
 
 The ReactionFilter is more robust than what is shown here and much-more-robust documentation can be found on the GlueX wiki. 
 
 ### 4. MCWrapper Config File
 The file `MC_nstar1440.config` is the MCWrapper config file that we use to run the entire MC Process from the commandline. The usage is given at the top of the file on line 1, but you can also type `gluex_MC.py -help` to see additional information on usage. 
 
-In this file, there are not many un-commented lines, as my use case is fairly simple and straightforward. On line 20, I specify the output directory for the output files. Line 22 has the numner of cores to use. Lines 24-25 specifiy the generator you want to use and the config file for that generator. Lines 35-36 control the beam energy range. Line 38 prescribes the GEANT version to use. Line 41 is the background. I am not sure how you should use this, as of now, but standard usage for me is to use `Random`. Line 44 is the analysis environment file you want to use. Line 48 is where we put the JANA analysis config file. 
+In this file, there are not many un-commented lines, as my use case is fairly simple and straightforward. 
+
+On line 20, I specify the output directory for the output files. 
+
+Line 22 has the numner of cores to use. 
+
+Lines 24-25 specifiy the generator you want to use and the config file for that generator. 
+
+Lines 35-36 control the beam energy range. 
+
+Line 38 prescribes the GEANT version to use. 
+
+Line 41 is the background. I am not sure how you should use this, as of now, but standard usage for me is to use `Random`. 
+
+Line 44 is the analysis environment file you want to use. 
+
+Line 48 is where we put the JANA analysis config file. 
 
 I havent run this yet in batch mode so I am not entirely sure how to use lines 50-72, but they *should* be correct for my hypothetical usage. 
 
