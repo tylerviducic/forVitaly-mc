@@ -82,6 +82,9 @@ Documentation for the DSelector can be found on the GlueX wiki.
 #### 4.) Getting MCWrapper help
 ```gluex_MC.py --help```
 
+#### 5.) Running ReactionFilter
+```hd_root /w/halld-scshelf2101/home/baturin/tyler/forVitaly-mc/output/hddm/dana_rest_genr8_040856_000.hddm --config jana_analysis.config```
+
 ## Links to Resources
 - [genr8 HOWTO](https://halldweb.jlab.org/wiki/index.php/HOWTO_Use_genr8)
 - [genr8 GitHub](https://github.com/JeffersonLab/sim-recon/tree/de076695f16956fe649366b53959c7582285001f/src/programs/Simulation/genr8)
