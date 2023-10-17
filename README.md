@@ -68,3 +68,28 @@ More documentation for the MCWrapper can be found [here on Overleaf](https://www
 The first thing I do is run my DSelector over my files to select the best $\chi^{2}/ndf$ in-time combo per event. 
 
 Documentation for the DSelector can be found on the GlueX wiki.
+
+## Commands from "Master Class"
+#### 1.) Running genr8
+```genr8 -M100 -Aoutput.ascii -n < nstar_1440_a2.input ```
+
+#### 2.) Getting genr8 help 
+```genr8 -h```
+
+#### 3.) Running MCWrapper
+```gluex_MC.py MC_nstar1440.config 40856 10000```
+
+#### 4.) Getting MCWrapper help
+```gluex_MC.py --help```
+
+## Links to Resources
+- [genr8 HOWTO](https://halldweb.jlab.org/wiki/index.php/HOWTO_Use_genr8)
+- [genr8 GitHub](https://github.com/JeffersonLab/sim-recon/tree/de076695f16956fe649366b53959c7582285001f/src/programs/Simulation/genr8)
+- [genr8 documentation](https://halldweb.jlab.org/DocDB/0000/000011/001/genr8_v_1_0.pdf)
+- [Getting Started](https://halldweb.jlab.org/wiki/index.php/Getting_started_with_GlueX_Software): covers generation, converting to hddm format, running GEANT. Some of this is outdated, I believe. 
+- [MCWrapper GitHub](https://github.com/JeffersonLab/gluex_MCwrapper)
+- [MCWrapper Documentation](https://www.overleaf.com/project/5bb7b3423bb4c259308b56c5)
+- [ReactionFilter Documentation](https://halldweb.jlab.org/DocDB/0034/003407/002/Analysis%20Library%20Overhaul.pdf)
+- [DSelector Overview](https://halldweb.jlab.org/wiki/index.php/DSelector)
+- [DSelector Documentation](https://halldweb.jlab.org/DocDB/0046/004607/004/DSelectorDoc.pdf)
+- [DSelector GitHub](https://github.com/JeffersonLab/gluex_root_analysis/tree/master/libraries/DSelector)
